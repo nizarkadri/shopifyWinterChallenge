@@ -2,6 +2,7 @@ LikedPhotos={};
 LikedPhotos.id=[];
 $(window).on('load',function(){
     $(".loader").fadeOut(1000);
+    
     $(".content").fadeIn(1000);
     
     $("#popup").fadeOut(5000);
