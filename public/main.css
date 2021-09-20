@@ -1,0 +1,159 @@
+html {
+  font-family: poppins;
+}
+h1,h2,h3,h4,h5.h6{
+  font-family: helvetica;
+}
+body{
+  background-color:#daebbc!important;
+}
+
+.loader{
+  background-image:url("preloader.png");
+  position:relative;
+  animation-name: rocket;
+  animation-duration: 1s;
+}
+@keyframes rocket {
+  0%   { top:30px;bottom:30px}
+  25%  { top:30px;bottom:30px}
+  50%  { top:30px;bottom:30px}
+  75%  { top:30px;bottom:30px}
+  100% { top:30px;bottom:30px}
+}
+.content{
+  display:none;
+}
+#hero{
+  box-shadow: -7px -7px 16px 0 #d8f0ad, -5px -5px 10px 10px rgba(185, 199, 159,0.80);
+  border-radius: 18px;  
+  border: 2px solid #d8f0ad;
+  border-radius: 20px;
+}
+#form{
+  background: #daebbc;
+  box-shadow: inset 3px 3px 7px 0 rgba(185, 199, 159,0.80), inset -4px -4px 6px 0 #d8f0ad;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  margin-top:1em;
+  padding:1em;
+}
+#formInput{
+  float : right;
+  padding:1em;  
+  border:0px transparent;
+  align-content: center;
+}
+#dateSelector{
+  float:left;
+  width: 70%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 18px;
+  margin-right: 1em;
+  box-shadow: inset 3px 3px 7px 0 rgba(116,150,179,0.32), inset -4px -4px 6px 0 #FFFFFF;
+
+}
+
+#datebtn{
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 18px;
+  box-shadow: 3px 3px 7px 0 rgba(116,150,179,0.32), -4px -4px 6px 0 #FFFFFF;
+  
+}
+#datebtn:hover{
+  box-shadow:inset 3px 3px 7px 0 rgba(116,150,179,0.32), inset -4px -4px 6px 0 #FFFFFF;
+}
+#formTitle{
+  
+  padding:1em;
+}
+.col-md-5 {
+  margin: 0.2em;
+}
+
+#header {
+  background-color: teal;
+  border-color: #90ee90;
+  border-radius: 0;
+  color: #daebbc;
+  box-shadow:  0 0.1em 0.4em 0.2em teal;
+  margin-bottom:3em!important;
+}
+.header-content{
+  text-align:center;
+  
+}
+
+.date {
+  /* color: grey; */
+  width: 20%;
+  text-align: left;
+  font-size: small;
+}
+.title {
+  /* color: indigo; */
+  width: auto;
+  text-align: left;
+}
+
+.marsCard{
+  margin-bottom:1em;
+  box-shadow: inset 3px 3px 7px 0 rgba(116,150,179,0.32), inset -4px -4px 6px 0 #FFFFFF;
+  background : transparent;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  color: white;
+  padding:0.5em;
+  align-content:center;
+}
+
+.marsCard img{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+figcaption{
+  background-color:teal;
+  box-shadow: -50px 70px 63px -60px teal ;
+  color: white;
+  padding-left: 1em;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.liked {
+  /* box-shadow: 2px 2px 2px 2px tomato; */
+  /* box-shadow: -50px 70px 63px -60px red ; */
+   box-shadow: inset 3px 3px 7px 0 red, inset -4px -4px 6px 0 red;
+  
+}
+
+
+.customFooter{
+  background-color: teal;
+  border-color: #90ee90;
+  border-radius: 0;
+  color: #daebbc;
+  box-shadow:  0 0.1em 0.4em 0.2em teal;
+  height:2em;
+ 
+}
+#popup{
+border-radius:20px;
+border-color:white;
+font-family:Helvetica;
+text-align:center;
+background-color:#daebbc;
+height:30%;
+width:30%;
+position:absolute;
+top:40%;
+bottom:30%;
+right:40%;
+color:teal;
+box-shadow: 0 0.1em 0.4em 0.2em teal;
+}
+#popup h3{
+  margin-top:20%;
+  z-index:1;
+}

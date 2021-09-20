@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <title>Spacetagram</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+   
+    <div class="loader">
+
+    </div>
+    <div id="popup">
+        <h3>Double tap to like</h3>
+    </div>
+<!-- -----------------------------------Header------------------------------- -->
+    <div class="container-fluid content" id="header" >
+        <h3 class="header-content">Spacetagram</h3>
+        <p class="header-content">Brought to you by NASA's image APIs</p>
+    </div>
+<!-- --------------------------------------Header End---------------------------------- -->
+
+<!-- ------------------------------------HERO--------------------------------------------- -->
+    <div class="container content" id="hero">
+       <div class="row">
+           <div class="col-md-6">
+                <h4 > Astronomy Picture of the Day :</h4>
+                <p class="date"> <%= posterdata.date%></p>
+                <p> <%=posterdata.explanation%></p>
+            </div>
+            <div class="col-md-6">
+                <%if (posterdata.media_type=="video"){%>
+                    <iframe width="100%" height="315"  src="<%=posterdata.url%>" title="<%posterdata.title%>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 <%}%>
+                 <%if(posterdata.media_type=="image"){%>
+                     <img width="100%" height="315" src="<%=posterdata.url%>">
+                <%}%>
+            </div>
+        </div>    
+    </div>
+<!-- -----------------------------------------HERO END---------------------------------------------- -->
+    
+<!-- ----------------------------------------------MAIN------------------------------------- -->
+    <div class="container content" id="form">
+        
+        <div class="row ">
+            <div class="col-md-3 " id="formTitle">
+                <h3>Search by date</h3>
+            </div>
+            <div class="col-md-9" id="formInput">
+                <input type="date"  id="dateSelector" name="Date">
+                <input type="button" id="datebtn" value="Get photos" onclick="post_date()">
+            </div>
+        </div>
+        
+        <div class="row" id="mainRow"> 
+        <%mars.photos.forEach(function(photo){%>
+            <div class="col-md-4 marsCard" id="<%=photo.id%>" ondblclick="liked(this)" >
+            <span id="<%=photo.id%>info" style="position:fixed;display:none;">Double tap to like</span>
+                <figure>
+                    
+                <img src="<%=photo.img_src%>" width="100%">
+                <figcaption ><span class="date"><%=photo.earth_date%></span> :
+                    <span class="title"> <%=photo.rover.name%>-<%=photo.camera.full_name%></span>
+                    
+                </figcaption>
+                </figure>
+                
+            </div>  
+        <%});%>
+        
+        </div>
+    </div>
+    <!-- Footer -->
+
+
+  <div class="footer-copyright text-center customFooter"> Designed and developed by Nizar Kadri
+    
+  </div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
