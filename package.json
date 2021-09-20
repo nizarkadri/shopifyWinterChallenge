@@ -1,4 +1,16 @@
 {
+  
+  "name": "shopifywinterchallenge",
+  "version": "1.0.0",
+  "description": "node app ",
+  "main": "app.js",
+  "scripts": {
+  "start": "node app.js"
+},
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/nizarkadri/shopifyWinterChallenge.git"
+},
 
   "dependencies": {
 
