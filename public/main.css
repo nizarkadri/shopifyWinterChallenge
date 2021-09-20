@@ -12,7 +12,7 @@ body{
   background-image:url("preloader.png");
   position:relative;
   animation-name: rocket;
-  animation-duration: 1s;
+  animation-duration: infinite;
 }
 @keyframes rocket {
   0%   { top:30px;bottom:30px}
