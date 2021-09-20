@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 8080||0;
+const port = 8080||8000;
 const app = express();
 const ejs = require('ejs');
 const fetch = require("node-fetch")
@@ -20,7 +20,7 @@ app.post('/search', (req, res) => {
 })
 app.get('/', (req, res) => {
     var APOD;
-    
+    console.log("Starting the real appplication");
     var uri = "https://api.nasa.gov/planetary/apod?api_key=aCvWJ9iFukrGCr6bo9MjutRU4dW9laPQyhUbT5T4"
     var options = {
         method: 'GET',
