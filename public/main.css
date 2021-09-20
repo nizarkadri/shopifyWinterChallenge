@@ -9,7 +9,7 @@ body{
 }
 
 .loader{
-  background-image:url("preloader.png");
+  
   position:relative;
   animation-name: rocket;
   animation-duration: infinite;
