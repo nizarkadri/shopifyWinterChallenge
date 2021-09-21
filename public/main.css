@@ -48,6 +48,9 @@ body{
   border:0px transparent;
   align-content: center;
 }
+#mainRow{
+  margin-top:1em;
+}
 #dateSelector{
   float:left;
   width: 70%;
