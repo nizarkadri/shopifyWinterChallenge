@@ -148,8 +148,9 @@ border-color:white;
 font-family:Helvetica;
 text-align:center;
 background-color:#daebbc;
-height:20%;
-width:20%;
+height:fit-content;
+width:fit-content;
+align-content:center;
 position:absolute;
 top:60%;
 bottom:30%;
@@ -157,7 +158,7 @@ right:40%;
 color:teal;
 box-shadow: 0 0.1em 0.4em 0.2em teal;
 }
-#popup h3{
-  margin-top:20%;
+#popup p{
+  font-size:3vw;
   z-index:1;
 }
