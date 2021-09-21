@@ -56,7 +56,8 @@ function post_date() {
 }
 
 function liked(element) {
-    console.log(element.id)
+    
+    // console.log(element)
     let isLiked=document.getElementById(element.id).classList.contains("liked")
     if (isLiked==false) {
         console.log(element.classList);

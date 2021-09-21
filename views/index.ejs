@@ -75,7 +75,7 @@
                 <img src="<%=photo.img_src%>" width="100%">
                 <figcaption ><span class="date"><%=photo.earth_date%></span> :
                     <span class="title"> <%=photo.rover.name%>-<%=photo.camera.full_name%></span>
-                    
+                    <button class="likebtn" id="<%=photo.id%>" onclick="liked($(this).parents().eq(2)[0])">like</button>
                 </figcaption>
                 </figure>
                 

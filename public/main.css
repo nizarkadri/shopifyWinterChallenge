@@ -162,3 +162,16 @@ box-shadow: 0 0.1em 0.4em 0.2em teal;
   font-size:3vw;
   z-index:1;
 }
+.likebtn{
+  background-color:#daebbc;
+  float:right;
+  border: 1px solid transparent;
+  border-radius: 18px;
+  box-shadow: 3px 3px 7px 0 rgba(116,150,179,0.32), -4px -4px 6px 0 teal;
+  height:fit-content;
+  width:fit-content;
+  margin-right:0.5em;
+}
+.likebtn:hover{
+  box-shadow:inset 3px 3px 7px 0 rgba(116,150,179,0.32), inset -4px -4px 6px 0 #FFFFFF;
+}
