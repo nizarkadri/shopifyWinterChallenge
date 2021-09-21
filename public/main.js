@@ -35,7 +35,7 @@ $(window).on('load',function(){
 
 function post_date() {
     console.log(document.querySelector('#dateSelector').value)
-    var uri = "http://" + window.location.host+"/search";
+    var uri = window.location.href+"search";
     console.log("-----"+uri)
     var requestOptions = {
     method: 'POST',
@@ -52,7 +52,7 @@ function post_date() {
         })
         .catch(error => console.log('error', error));
     
-    window.open(window.location.href,"__self");
+    window.open(window.location.href,"_self");
 }
 
 function liked(element) {
