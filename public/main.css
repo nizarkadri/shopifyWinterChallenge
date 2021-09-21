@@ -178,3 +178,18 @@ box-shadow: 0 0.1em 0.4em 0.2em teal;
 .likebtn:hover{
   box-shadow:inset 3px 3px 7px 0 rgba(116,150,179,0.32), inset -4px -4px 6px 0 #FFFFFF;
 }
+
+@media only screen and (max-width: 768px) {
+  
+  #dateSelector{
+    width:60%;
+    float:left;
+    margin:0;
+  }
+  #datebtn{
+    width:40%;
+    float:right;
+    margin:0;
+  }
+  
+}
